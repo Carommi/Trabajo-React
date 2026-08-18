@@ -175,26 +175,28 @@ const productos = [
 import Producto from "./components/Producto";
 
 function App() {
-
   return (
     <main className="app">
-      <h1>Wonder Beauty Shop</h1>
+
+      <header className="encabezado">
+        <p className="subtitulo">✨ Belleza & cuidado ✨</p>
+        <h1>Wonder Beauty Shop</h1>
+        <p>Encuentra tus favoritos de belleza en un solo lugar 💕</p>
+      </header>
+
       <section className="catalogo">
-
         {productos.map((producto) => (
-
           <Producto
             key={producto.id}
             nombre={producto.nombre}
             precio={producto.precio}
+            imagen={producto.imagen}
           />
         ))}
-
       </section>
+
     </main>
-
   );
-
 }
 
 export default App;
