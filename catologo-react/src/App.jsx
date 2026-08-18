@@ -140,13 +140,36 @@ import './App.css'
 // }}}
 
 const productos = [
-
-  { id: 1, nombre: "Labial mate", precio: 18000 },
-  { id: 2, nombre: "Crema facial", precio: 26000 },
-  { id: 3, nombre: "Perfume", precio: 42000 },
-  { id: 4, nombre: "Set de brochas", precio: 35000 },
-  { id: 5, nombre: "Sombra", precio: 22000 }
-
+  {
+    id: 1,
+    nombre: "Labial mate",
+    precio: 18000,
+    imagen: "/Labial.jpg"
+  },
+  {
+    id: 2,
+    nombre: "Crema facial",
+    precio: 26000,
+    imagen: "/Crema.avif"
+  },
+  {
+    id: 3,
+    nombre: "Perfume",
+    precio: 42000,
+    imagen: "/Perfume.jpg"
+  },
+  {
+    id: 4,
+    nombre: "Set de brochas",
+    precio: 35000,
+    imagen: "/Brochas.avif"
+  },
+  {
+    id: 5,
+    nombre: "Sombra",
+    precio: 22000,
+    imagen: "/Sombras.jpg"
+  }
 ];
 
 import Producto from "./components/Producto";
