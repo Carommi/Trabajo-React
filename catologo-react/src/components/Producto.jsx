@@ -1,11 +1,12 @@
-export default function Producto() {
+
+export default function Producto({ imagen, nombre, precio }) {
 
     return (
 
         <article className="producto">
 
-            <img src="/producto-demo.png" alt="Producto" />
-            <h2>Labial mate</h2>
+            <img src={imagen} alt="Producto" />
+            <h2>{nombre}</h2>
             <p>Producto para catálogo de belleza.</p>
             <strong>$18.000</strong>
 
@@ -14,4 +15,5 @@ export default function Producto() {
     );
 
 }
+
 

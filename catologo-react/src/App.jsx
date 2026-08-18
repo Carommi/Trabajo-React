@@ -139,10 +139,38 @@ import './App.css'
 
 // }}}
 
+const productos = [
+
+  { id: 1, nombre: "Labial mate", precio: 18000 },
+  { id: 2, nombre: "Crema facial", precio: 26000 },
+  { id: 3, nombre: "Perfume", precio: 42000 },
+  { id: 4, nombre: "Set de brochas", precio: 35000 },
+  { id: 5, nombre: "Sombra", precio: 22000 }
+
+];
+
 import Producto from "./components/Producto";
 
 function App() {
-  return <Producto />;
+
+  return (
+    <main className="app">
+      <h1>Wonder Beauty Shop</h1>
+      <section className="catalogo">
+
+        {productos.map((producto) => (
+
+          <Producto
+            key={producto.id}
+            nombre={producto.nombre}
+            precio={producto.precio}
+          />
+        ))}
+
+      </section>
+    </main>
+
+  );
 
 }
 
